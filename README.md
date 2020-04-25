@@ -1,13 +1,45 @@
 //DMS NOTES:
 
+DEPLOYMENT TO GH PAGES
+
+
+add to scripts:
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+
+add the homepage and proxy
+{
+  "name": "my-portfolio-react",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://88dennis.github.io/my-portfolio-react/",
+  "proxy": "http://localhost:3006/",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "gh-pages": "^2.0.1",
+    "nodemailer": "^6.1.1",
+    "passport": "^0.4.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-scroll": "^1.7.11"
+  },
 
 Git add /commit
 npm run build
 npm install --save gh-pages
 Git add /commit
 npm run deploy
-
-"proxy": "http://localhost:3001/",
 
 
 
