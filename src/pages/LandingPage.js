@@ -1,6 +1,22 @@
 import React, {Component} from 'react';
+import { Link } from "react-router-dom";
 import logo from '../images/DS3.png';
 import logo2 from '../images/DS3NOBGBG.png';
+
+
+const styles = ({
+    divStyle: {
+      fontSize: '25px',
+      textAlign: "center",
+      fontFamily: 'arial',
+    },
+  
+    divStyle2: {
+      fontSize: '20px',
+      textAlign: "center"
+    },
+  
+  });
 
 class LandingPage extends Component {
 
@@ -14,8 +30,7 @@ class LandingPage extends Component {
           newState.showLogo = !newState.showLogo
           this.setState(newState);
           console.log("mouse enter")
-      }
-
+      };
 
     render() {
 
@@ -25,7 +40,6 @@ class LandingPage extends Component {
           let hideLogo2 = {
             'display': "none" 
           };
-        
               if(!this.state.showLogo) {
                 hideLogo = { 
                   'display': "none"
@@ -53,13 +67,38 @@ class LandingPage extends Component {
                         <div className="logocirclewrap1">
                             <div className="logocirclewrap3" onMouseLeave= {this.handleShowLogo} style={hideLogo2} >
                             <img className="logoimghome" src={logo2} alt="logo" />
-                            
                             </div>
                         </div>
                     </div>
                     {/* LOGO ENDS */}
 
+                    <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          {/* APP DESCRIPTION STARTS */}
+          <div className="descwrap1">
+            <div className="descwrap2">
+              <div style={styles.divStyle}>
+                <p>Looking for Web Designs?</p>
+              </div>
+              <br></br>
+              
+              <div style={styles.divStyle2}>
+                <p>Sarmiento Dev | Design | Development</p>
+              </div>
+              <br></br>
+            </div>
+          </div>
+          <br></br>
+          {/* APP DESCRIPTION ENDS */}
 
+          <div className="loginsignupbtnhomewrap">
+            <button onMouseEnter={() => this.setState({ btnmsg: "Go Inside!" })} onMouseLeave={() => this.setState({ btnmsg: 'Welcome!' })} className="loginsignupbtnhome"><Link to="/" className="linkLand"><div className={window.location === "/" ? "landpagediv landnow" : "landpagediv landnotnow"}>
+              {this.state.btnmsg}</div></Link></button>
+          </div>
 
                 </div>
             </div>
