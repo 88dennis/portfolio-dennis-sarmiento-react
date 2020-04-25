@@ -1,38 +1,111 @@
-/* .App {
-  text-align: center;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+	box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  overflow: auto;
+
+    /* background: -webkit-gradient(linear, left top, right bottom, from(rgb(204, 125, 125)), to(rgb(3, 3, 3))) fixed; */
+  /* background: -webkit-gradient(linear, left top, right bottom, from(rgb(71, 70, 70)), to(rgb(3, 3, 3))) fixed; */
+    
+  /* background-image: linear-gradient(to bottom right, to(rgb(65, 62, 71), rgb(32, 31, 31)); */
+  
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.landingPageContainer {
+    background-color: black;
+    color: white;
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.landpagewrap {
+    margin: 0;
+    /* height: 100vh; */
+    /* background: -webkit-gradient(linear, left top, left bottom, from(rgb(88, 89, 184)), to(rgb(109, 126, 148))) fixed; */
+    /* background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(77, 19, 209, 1))) fixed; */
+    }
+
+.logocont2 {
+    display: flex;
+    justify-content: center;
+}
+
+.logoimghome {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    display: inline-block;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    /* border-radius: 50%; */
+    background: transparent;
+    z-index: 1;
   }
+
+.logoimghome3 {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    /* border-radius: 50%; */
+    z-index: 1;
+    background: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* .logocirclewrap1{
+        width: 190px;
+        height: 190px;
+        background: transparent;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 30px;
+        background: rgba(102, 51, 153, .2);
+        
+      }  */
+.logocirclewrap2 {
+    width: 180px;
+    height: 180px;
+    background: rgb(204, 203, 203);
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    position: relative;
+    margin: 0;
+    border-radius: 20px;
+    /* border-style: solid;
+        border-width: 10px;
+    border-color: rgba(22, 20, 54, 0.5); */
+    overflow: hidden;
+    box-shadow: 1px 0px 7px rgb(12, 12, 12, 0.5);
+
 }
 
-.App-link {
-  color: #61dafb;
+.logocirclewrap3 {
+    width: 180px;
+    height: 180px;
+    background: rgb(204, 203, 203);
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    position: relative;
+    margin: 0;
+    border-radius: 20px;
+    /* border-style: solid;
+        border-width: 10px;
+    border-color: rgba(22, 20, 54, 0.5); */
+    overflow: hidden;
+    box-shadow: 1px 0px 7px rgb(12, 12, 12, 0.5);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+/* -------------------------------------- */

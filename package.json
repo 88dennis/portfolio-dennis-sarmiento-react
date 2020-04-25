@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://88dennis.github.io/portfolio-dennis-sarmiento-react/",
-  "proxy": "http://localhost:3006/",
+  "proxy": "http://localhost:3000/portfolio-dennis-sarmiento-react",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
