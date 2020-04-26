@@ -11,6 +11,9 @@ align-items: center;
 height: 100%;
 }
 
+.toolbar_logo {
+    margin-left: 2rem;
+}
 .toolbar_logo a{
     color: white;
     text-decoration: none;

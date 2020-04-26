@@ -25,6 +25,10 @@ class LandingPage extends Component {
         showLogo: true,
       }
 
+      componentWillMount() {
+        setInterval(this.handleShowLogo, 3000)
+      }
+
       handleShowLogo = () => {
           const newState = {...this.state}
           newState.showLogo = !newState.showLogo

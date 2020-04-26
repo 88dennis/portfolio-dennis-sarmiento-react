@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import Modal from '../components/Modal/Modal';
 import Backdrop from '../components/Backdrop/Backdrop';
-import Toolbar from "../components/Toolbar/Toolbar"
+import Toolbar from "../components/Toolbar/Toolbar";
+import SideDrawer from "../components/SideDrawer/SideDrawer";
+import SideDrawerBackdrop from "../components/SideDrawerBackdrop/SideDrawerBackdrop";
 
 
 
@@ -45,8 +47,10 @@ class TestPage extends Component {
 
 
         return (
-            <> 
+            <div style={{height: "100%", padding: "0"}}> 
             <Toolbar></Toolbar>
+            <SideDrawer></SideDrawer>
+            <SideDrawerBackdrop></SideDrawerBackdrop>
             
             {/* MODAL CODE STARTS */}
             {this.state.modalShow && <Backdrop canClose={this.modalCancelHandler}></Backdrop>}  
@@ -61,7 +65,7 @@ class TestPage extends Component {
                 </div>
             </main>
             {/* MODAL CODE ENDS */}
-            </>
+            </div>
         )
     };
 }
