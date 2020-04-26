@@ -6,8 +6,7 @@ import './DrawerToggle.css'
 const drawerToggleButtonComp = (props) => (
 
     <>
-        <button className="toggle_button">
-
+        <button className="toggle_button" onClick={props.click}>
             <div className="toggle_button_line"></div>
             <div className="toggle_button_line"></div>
             <div className="toggle_button_line"></div>

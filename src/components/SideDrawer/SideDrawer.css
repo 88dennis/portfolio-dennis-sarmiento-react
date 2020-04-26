@@ -1,23 +1,78 @@
-.side_drawer {
+.sidedrawer {
     height: 100%;
-    background: rgb(112, 153, 172);
-    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    background: white;
+    box-shadow:  1px 0px 7px rgb(12, 12, 12, 0.5);
     position: fixed;
     top: 0;
     left: 0;
-    width: 70%;
-    max-width: 350px;
-    /* this is to make it above the sidedrawer backdrop */
+    width:70%;
+    max-width: 400px;
     z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out
 }
 
-.side_drawer ul {
+.sidedrawer.open {
+    transform: translateX(0);
+}
+
+.sidedrawer a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.sidedrawer a:hover,
+.sidedrawer a:active {
+    color: gray;
+}
+
+
+
+.sidedrawer section  {
     list-style: none;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-.side_drawer a {
-    color: white;
-    text-decoration: none;
+.listDiv {
+    padding: 1rem;
 }
+
+.now a {
+    color: red;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: blue;
+    
+}
+
+.notnow a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+}
+
+.now {
+    background-color: rgba(98, 71, 199, 0.5);
+    color: white;
+}
+
+.listDiv.now:active {
+    background-color: red;
+    color: white;
+}
+
+.notnow:hover {
+    color: white;
+    background-color: rgb(127, 127, 206);
+    
+}
+
+
+/* @media (min-width: 696px) {
+    .sidedrawer {
+        display: none;
+    }
+} */

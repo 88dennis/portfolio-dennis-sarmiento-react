@@ -44,3 +44,12 @@ height: 100%;
 .toolbar_navigation_items a:active {
     color: black
 }
+
+/* not to show some items in nav bar */
+
+@media (max-width: 768px) {
+     .toolbar_navigation_items {
+         display:none;
+     }
+}
+

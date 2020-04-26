@@ -3,10 +3,8 @@ import Modal from '../components/Modal/Modal';
 import Backdrop from '../components/Backdrop/Backdrop';
 import Toolbar from "../components/Toolbar/Toolbar";
 import SideDrawer from "../components/SideDrawer/SideDrawer";
+import PageLinks from "../components/PageLinks/PageLinks";
 import SideDrawerBackdrop from "../components/SideDrawerBackdrop/SideDrawerBackdrop";
-
-
-
 
 const addMargin = ({
     addMargin1: {
@@ -14,11 +12,10 @@ const addMargin = ({
     }
   });
 
-
 class TestPage extends Component {
-
     state = {
-        modalShow: false
+        modalShow: false,
+        sideDrawerOpen: false
     };
 
     // MODAL CODE STARTS
@@ -43,15 +40,46 @@ class TestPage extends Component {
     }
         // MODAL CODE ENDS
 
-    render() {
+        //SIDE DRAWER CODE STARTS
+        drawerToggleClickHandler = () => {
+            const newState = { ...this.state }
+            newState.sideDrawerOpen = !newState.sideDrawerOpen
+            this.setState(newState);
+          }
+          drawerBackdropClickHandler = () => {
+            const newState = { ...this.state }
+            newState.sideDrawerOpen = false;
+            this.setState(newState);
+          }
+
+        // //same:
+        // drawerToggleClickHandler = () => {
+        //    this.setState((prevState) =>{
+        //      return {sideDrawerOpen: !prevState.sideDrawerOpen}
+        //      });
+        //    };
+
+        //SIDE DRAWER CODE ENDS
+        render() {
+            //for SIDE DRAWER AND ITS BACKDROP
+            
+            let sideDrawerBackdrop;
+
+            if(this.state.sideDrawerOpen){
+                sideDrawerBackdrop = <SideDrawerBackdrop drawerBackdropClickHandler={this.drawerBackdropClickHandler}/>
+            }
+            //-----------------------------------
 
 
         return (
+            <>
             <div style={{height: "100%", padding: "0"}}> 
-            <Toolbar></Toolbar>
-            <SideDrawer></SideDrawer>
-            <SideDrawerBackdrop></SideDrawerBackdrop>
-            
+            <Toolbar toggleDrawer={this.drawerToggleClickHandler}></Toolbar>
+            <SideDrawer show={this.state.sideDrawerOpen}>
+            <PageLinks backToSamePage = {this.drawerBackdropClickHandler}/>
+            </SideDrawer>
+            {sideDrawerBackdrop}
+
             {/* MODAL CODE STARTS */}
             {this.state.modalShow && <Backdrop canClose={this.modalCancelHandler}></Backdrop>}  
             {this.state.modalShow && <Modal title="Add Event" canCancel canConfirm onCancel={this.modalCancelHandler} onConfirm={this.modalConfirmHandler}>
@@ -66,7 +94,8 @@ class TestPage extends Component {
             </main>
             {/* MODAL CODE ENDS */}
             </div>
+            </>
         )
     };
 }
-export default TestPage
+export default TestPage;

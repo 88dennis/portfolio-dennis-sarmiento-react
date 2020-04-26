@@ -8,7 +8,8 @@ const toolbarComp = props => (
     <header className="toolbar">
         <nav className="toolbar_navigation">
             <div>
-                <DrawerToggle></DrawerToggle>
+                {/* click is just a prop we need to pass it again */}
+                <DrawerToggle click={props.toggleDrawer}></DrawerToggle>
             </div>
             <div className="toolbar_logo"><a href="/">THE LOGO</a></div>
             <div className="spacer"></div>
