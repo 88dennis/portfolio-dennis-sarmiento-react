@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LandingPage from "./pages/LandingPage"
-import LandingPage2 from "./pages/LandingPage2"
+import HomePage from "./pages/HomePage"
 // import logo from './logo.svg'; //from original file
 import './App.css'; //from original file
 
@@ -11,11 +11,9 @@ function App() {
     <Router basename = {process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={LandingPage} />
-          <Route exact path="/LandingPage2" component={LandingPage2} />
+          <Route exact path="/HomePage" component={HomePage} />
         </Switch>
     </Router>
-
-
     </div>
   );
 }

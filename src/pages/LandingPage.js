@@ -18,6 +18,8 @@ const styles = ({
   
   });
 
+
+
 class LandingPage extends Component {
 
     state = {
@@ -47,7 +49,7 @@ class LandingPage extends Component {
                 
             hideLogo2 = { 'display': "flex" };
               }
-              
+
         return (
             <div className="landingPageContainer">
                 <div className="lanpagewrap">
@@ -71,7 +73,6 @@ class LandingPage extends Component {
                         </div>
                     </div>
                     {/* LOGO ENDS */}
-
                     <br></br>
           <br></br>
           <br></br>
@@ -96,7 +97,9 @@ class LandingPage extends Component {
           {/* APP DESCRIPTION ENDS */}
 
           <div className="loginsignupbtnhomewrap">
-            <button onMouseEnter={() => this.setState({ btnmsg: "Go Inside!" })} onMouseLeave={() => this.setState({ btnmsg: 'Welcome!' })} className="loginsignupbtnhome"><Link to="/" className="linkLand"><div className={window.location === "/" ? "landpagediv landnow" : "landpagediv landnotnow"}>
+            <button onMouseEnter={() => this.setState({ btnmsg: "Go Inside!" })} onMouseLeave={() => this.setState({ btnmsg: 'Welcome!' })} className="loginsignupbtnhome">
+            <Link to="/HomePage" className="linkLand">
+            <div className={window.location === "/HomePage" ? "landpagediv landnow" : "landpagediv landnotnow"}>
               {this.state.btnmsg}</div></Link></button>
           </div>
 
