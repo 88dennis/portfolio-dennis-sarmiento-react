@@ -7,12 +7,14 @@ class HomePage extends Component {
     render() {
         return (
             <>
+            <Link to="/ModalPage"><button>Modal Page</button></Link>
+            <Link to="/TestPage"><button>Test Page</button></Link>
             <div className="mainpagewrap">
 
-            <div className=".circles">  
+            <div className=".circles">
 
                 <div id="circle1" className="three-circles">
-                <Link to="/ModalPage">
+                <Link to="/AboutMe">
                     <button id="btnid1" className="btn1">
                         <div className="me-circle">
                             <h1 className="front-names">Dennis</h1>
@@ -22,7 +24,7 @@ class HomePage extends Component {
                 </div>
 
                 <div id="circle1" className="three-circles">
-                <Link to="/ModalPage">
+                <Link to="/Portfolio">
                     <button id="btnid1" className="btn1">
                         <div className="me-circle">
                             <h1 className="front-names">Portfolio</h1>
@@ -32,7 +34,7 @@ class HomePage extends Component {
                 </div>
                 <div id="circle1" className="three-circles">
 
-                <Link to="/ModalPage">
+                <Link to="/Contact">
                     <button id="btnid1" className="btn1">
                         <div className="me-circle">
                             <h1 className="front-names">Contact</h1>

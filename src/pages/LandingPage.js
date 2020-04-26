@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Link } from "react-router-dom";
 import logo from '../images/DS3.png';
 import logo2 from '../images/DS3NOBGBG.png';
-
+import "./LandingPage.css";
 
 const styles = ({
     divStyle: {

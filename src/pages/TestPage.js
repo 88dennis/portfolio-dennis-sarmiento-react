@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Modal from '../components/Modal/Modal';
 import Backdrop from '../components/Backdrop/Backdrop';
 
-class ModalPage extends Component {
+class TestPage extends Component {
 
     state = {
         modalShow: false
@@ -42,12 +42,11 @@ class ModalPage extends Component {
                 <p>Modal Content</p>
             </Modal>}
             <div>
-                <button onClick={this.modalShowHandler}>MODAL</button>
+                <button className="modalButton" onClick={this.modalShowHandler}>MODAL</button>
             </div>
             {/* MODAL CODE ENDS */}
-
             </>
         )
     };
 }
-export default ModalPage
+export default TestPage
