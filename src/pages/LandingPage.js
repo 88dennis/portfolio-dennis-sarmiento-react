@@ -18,8 +18,6 @@ const styles = ({
   
   });
 
-
-
 class LandingPage extends Component {
 
     state = {
