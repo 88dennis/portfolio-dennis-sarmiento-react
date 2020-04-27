@@ -8,12 +8,18 @@ const projectsComp = (props) => {
     
     return (
     <>
-        {/* the key prop here is required by react */}
-        {/* if you want to do a method inside this html or pass a prop, you enclose it with a curly bracket */}
-        {/* pass the KEY prop to the OUTERMOST ELEMENT */}
-        {props.projects.map((project, key) => (
-            <div key={key}>
-                        <div className="appBoxMain">
+       <div className="boxMainWrap">
+
+{/* the key prop here is required by react */}
+{/* if you want to do a method inside this html or pass a prop, you enclose it with a curly bracket */}
+{/* pass the KEY prop to the OUTERMOST ELEMENT */}
+{props.projects.map((project, key) => (
+   
+
+<div key={key} className="boxWrapper1">
+<div>
+<div className="box4">
+<div className="appBoxMain">
             <div className="appBox">
             <div className="boxCont">
             <a href={project.projectLink} target="_blank" rel="noopener noreferrer"><img className="projectImg" src={project.image} alt="Logo" /></a>
@@ -29,16 +35,22 @@ const projectsComp = (props) => {
                 </div>
 
             </div>
+</div>
+</div>
 
 
-            {/* get portion of the content */}
-            
-            <br/>
+
+    {/* get portion of the content */}
+   
+    <br/>
 
 
-            <hr></hr>
-            </div>
-        ))}
+    </div>
+))}
+{/* USING A FOR LOOP pass the items object*/}
+{/* {items} */}
+</div>
+        
 {/* USING A FOR LOOP pass the items object*/}
         {/* {items} */}
     </>

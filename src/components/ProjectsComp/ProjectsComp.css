@@ -24,20 +24,68 @@ align-items: center;
 }
 
 .boxCont {
-    margin: 20px;
+    margin: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
 }
 
+.boxCont h3 {
+
+    margin-bottom: 0;
+}
 .appInfoButton {
     height: 30px;
     border-radius: 10%;
+    width: 80px;
     margin: 0.25rem;
     background-color: rgb(71, 71, 68);
     color: white;
     outline: none;
+    border: none;
 }
 
 .appInfoButton:hover,
 .appInfoButton:focus{
     color: black;
     background-color: white;
+}
+
+.boxMainWrap {
+    margin: 0 auto;
+    /* background: rgb(78, 65, 47); */
+    width: 95%;
+    align-items: center;
+    background: rgb(228, 212, 189);
+/* display: flex;
+justify-content: center; */
+}
+
+.boxMainWrap1 {
+    margin: 0 auto;
+    background: rgb(228, 212, 189);
+    
+/* display: flex;
+justify-content: center; */
+}
+
+.boxWrapper1 {
+    display: inline-block;
+    /* background-color: blue; */
+    margin: 20px;
+    width: 30%;
+    /* width: 350px; */
+    min-width: 320px;
+    align-items: center;
+    height: 200px;
+    border-bottom-color: rgb(167, 161, 161);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    
+}
+
+.box4 {
+    margin: 10px;
 }
