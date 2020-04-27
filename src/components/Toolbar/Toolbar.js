@@ -11,15 +11,17 @@ const toolbarComp = props => (
                 {/* click is just a prop we need to pass it again */}
                 <DrawerToggle click={props.toggleDrawer}></DrawerToggle>
             </div>
-            <div className="toolbar_logo"><a href="/">THE LOGO</a></div>
+            <div className="toolbar_logo"><a href="/">{props.logo}</a></div>
             <div className="spacer"></div>
+            <div className="toolbar_btns">{props.children}</div>
             <div className="toolbar_navigation_items">
-                <ul>
+                {/* <ul>
                     <li><a href="/">Main</a></li>  
                     <li><a href="/">Home</a></li>
                     <li><a href="/">Contact</a></li>
                     
-                </ul>
+                    
+                </ul> */}
             </div>
 
         </nav>

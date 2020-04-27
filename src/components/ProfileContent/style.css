@@ -1,0 +1,43 @@
+.profileWrap {
+    justify-content: center;
+    display: flex;
+}
+.profileCont {
+    width: 100%;
+    max-width: 100%;
+    /* background: rgb(245, 245, 245); */
+    /* box-shadow: 0 2px 8px rgba(0,0,0, .26); */
+    background: transparent;
+    overflow: auto;
+}
+
+.profileContentHeader {
+    padding: 1.5rem;
+    background: transparent;
+    /* background: darkgray; */
+    color:rgb(32, 31, 31);
+
+}
+
+.profileContentHeader h1 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.profileContent {
+    padding: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.profileButtons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .profileCont {
+        width: 40rem;
+        left: calc((100% - 40rem)/ 2);
+    }
+}

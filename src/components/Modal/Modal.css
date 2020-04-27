@@ -1,25 +1,41 @@
 .modal {
     width: 60%;
-    background: gray;
+    background: rgb(231, 218, 218);
     box-shadow: 0 2px 8px rgba(0,0,0,0.26);
     position: fixed;
     top: 20vh;
     left: 20%;
+    z-index: 200;
 };
 
 .modalHeader {
     padding: 2rem;
-    background: black;
+    background: rgba(0,0,0,0.75);
     border-style: solid;
     font-size: 1.25rem;
     height: 30px;
 }
 
+.modalButtons {
+    height: 30px;
+    border-radius: 10%;
+    margin: 0.25rem;
+    background-color: steelblue;
+    color: white;
+    outline: none;
+}
+
+.modalButtons:hover,
+.modalButtons:focus{
+    color: steelblue;
+    background-color: white;
+}
+
 .modalHeader h1 {
     margin: 0;
-    background: black;
+    background: rgba(0,0,0,0.75);
     padding: 1rem;
-    color: pink;
+    color: white;
 }
 
 .modal_content {
