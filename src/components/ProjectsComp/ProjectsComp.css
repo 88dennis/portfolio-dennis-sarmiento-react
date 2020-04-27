@@ -1,0 +1,43 @@
+.projectImg {
+    height: 100px;
+    width: 100px;
+    border-radius: 15%;
+}
+
+.projectImg:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+    
+}
+/* .appBoxMain {
+    justify-content: center;
+    display: flex;
+} */
+.appBox {
+    display: flex;
+align-items: center;
+    padding: 0 20px;
+    
+}
+
+.boxCont {
+    margin: 20px;
+}
+
+.appInfoButton {
+    height: 30px;
+    border-radius: 10%;
+    margin: 0.25rem;
+    background-color: rgb(71, 71, 68);
+    color: white;
+    outline: none;
+}
+
+.appInfoButton:hover,
+.appInfoButton:focus{
+    color: black;
+    background-color: white;
+}

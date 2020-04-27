@@ -1,5 +1,7 @@
 import React from 'react';
+import './ProjectsComp.css'
 // import {Link} from 'react-router-dom';
+// import logo from '../images/Idphoto2.jpg';
 
 //articles is a prop name so when we use this component you can pass data into it
 const projectsComp = (props) => {
@@ -11,11 +13,29 @@ const projectsComp = (props) => {
         {/* pass the KEY prop to the OUTERMOST ELEMENT */}
         {props.projects.map((project, key) => (
             <div key={key}>
-            <h3>{project._id}</h3>
+                        <div className="appBoxMain">
+            <div className="appBox">
+            <div className="boxCont">
+            <a href={project.projectLink} target="_blank" rel="noopener noreferrer"><img className="projectImg" src={project.image} alt="Logo" /></a>
+                
+                </div>
+                {/* <div className="spacer"></div> */}
+                <div className="boxCont">
+                    <h3>{project.name}</h3>
+                    <button className="appInfoButton" onClick={
+                () => props.projectBtnHandler(project._id)
+                }>App Info</button>
+                </div>
+                </div>
+
+            </div>
+
+
             {/* get portion of the content */}
-            <p>{project.name}</p>
+            
             <br/>
-            <button onClick={() => props.projectBtnHandler(project._id)}> app</button>
+
+
             <hr></hr>
             </div>
         ))}

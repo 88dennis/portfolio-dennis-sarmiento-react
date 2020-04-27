@@ -4,11 +4,11 @@ import Backdrop from '../components/Backdrop/Backdrop';
 import Toolbar from "../components/Toolbar/Toolbar";
 import SideDrawer from "../components/SideDrawer/SideDrawer";
 import PageLinks from "../components/PageLinks/PageLinks";
-import ProfilePicture from "../components/ProfilePicture/ProfilePicture";
+
 import SideDrawerBackdrop from "../components/SideDrawerBackdrop/SideDrawerBackdrop";
 import ProjectsComp from "../components/ProjectsComp/ProjectsComp";
 import { Link } from "react-router-dom";
-import logo from '../images/Idphoto2.jpg';
+
 import "./PortfolioPage.css";
 import projectData from '../projectData';
 
@@ -17,12 +17,18 @@ console.log(projectData);
 class PortfolioPage extends Component {
     state = {
         modalShow: false,
+        modalShowAppInfo: false,
         sideDrawerOpen: false,
         projectId:"",
         projectName:"",
         projectInfo:"",
-        projectModalLink:""
+        projectModalLink:"",
+        projectImage:"",
+        projectGitimage:"",
+        projectGitHubLink:"",
+       
     };
+
 
 
     projectBtnHandler = id => {
@@ -33,6 +39,10 @@ class PortfolioPage extends Component {
         newState.projectName = project.name
         newState.projectInfo = project.projectInfo
         newState.projectModalLink = project.projectLink
+        newState.projectImage = project.image
+        newState.projectGitimage = project.gitimage
+        newState.projectGitHubLink = project.gitHubLink
+        newState.modalShowAppInfo = true;
         // newState.modallProjectInfoShow=!newState.modallProjectInfoShow
         console.log(id)
         console.log(project.name)
@@ -47,20 +57,25 @@ class PortfolioPage extends Component {
         newState.modalShow = true;
         this.setState(newState);
     }
+
     modalCancelHandler =() => {
         this.setState(
             {
-                modalShow: false
+                modalShow: false,
+                modalShowAppInfo: false
             }
             )
     }
     modalConfirmHandler =() => {
         this.setState(
             {
-                modalShow: false
+                modalShow: false,
+                modalShowAppInfo: false
             }
             )
     }
+
+
         // MODAL CODE ENDS
 
         //SIDE DRAWER CODE STARTS
@@ -112,15 +127,21 @@ class PortfolioPage extends Component {
             </Modal>}
             {/* MODAL CODE ENDS */}
 
+            {/* MODAL CODE STARTS */}
+            {this.state.modalShowAppInfo && <Backdrop canClose={this.modalCancelHandler}></Backdrop>}  
+            {this.state.modalShowAppInfo && <Modal title={this.state.projectName} btnName1="Go Back" btnName2="Home Page" canCancel canConfirm onCancel={this.modalCancelHandler} onConfirm={this.modalConfirmHandler}>
+            <p>{this.state.projectInfo}</p>
+            <a href={this.state.projectModalLink} target="_blank" rel="noopener noreferrer">Go to App</a>
+            </Modal>}
+            {/* MODAL CODE ENDS */}
+
         {/* HOW TO CREATE A JAVASCRIPT OBJECT USING DOUBLE CURLY BRACES*/}
         {/* style={{marginTop: "100px"}} */}
             <main>
                 <div className="aboutMeCont1"style={{paddingTop: "75px"}} >
-                    <div className="box1">
-                    <ProfilePicture>
-            <img className="profileimghome" src={logo} alt="Logo" />
-          </ProfilePicture>
+                    <div className="box3">
           <ProjectsComp projectBtnHandler={this.projectBtnHandler} projects={projectData} />
+
                     </div>
                     <div className="box2"></div>
                 </div>

@@ -13,7 +13,7 @@ const pageLinksComp = props => (
         <Link to="/PortfolioPage"><div className={window.location.pathname === ("/portfolio-dennis-sarmiento-react/PortfolioPage" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/PortfolioPage") ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
         Portfolio</div></Link>
         
-        <Link to="/LandingPage"><div className={window.location.pathname === ("/portfolio-dennis-sarmiento-react/LandingPage" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/LandingPage") ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
+        <Link to="/"><div className={window.location.pathname === ("/portfolio-dennis-sarmiento-react/" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/") ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
         Back to Main</div></Link>
 
         <Link to="/ModalPage"><div className={window.location.pathname === "/ModalPage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
