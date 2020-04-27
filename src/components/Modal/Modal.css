@@ -40,6 +40,8 @@
 
 .modal_content {
     padding: 1rem;
+    overflow: auto;
+    height: 150px;
 }
 .modal_actions {
     display: flex;

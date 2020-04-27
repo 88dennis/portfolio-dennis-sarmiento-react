@@ -100,6 +100,11 @@ class PortfolioPage extends Component {
         //SIDE DRAWER CODE ENDS
         render() {
             //for SIDE DRAWER AND ITS BACKDROP
+            let appLink;
+
+            if(this.state.modalShowAppInfo) {
+                appLink = <a href={this.state.projectModalLink} target="_blank" rel="noopener noreferrer"><button className="modalButtons">Go to App</button></a>
+            }
             
             let sideDrawerBackdrop;
             if(this.state.sideDrawerOpen){
@@ -129,9 +134,8 @@ class PortfolioPage extends Component {
 
             {/* MODAL CODE STARTS */}
             {this.state.modalShowAppInfo && <Backdrop canClose={this.modalCancelHandler}></Backdrop>}  
-            {this.state.modalShowAppInfo && <Modal title={this.state.projectName} btnName1="Go Back" btnName2="Home Page" canCancel canConfirm onCancel={this.modalCancelHandler} onConfirm={this.modalConfirmHandler}>
+            {this.state.modalShowAppInfo && <Modal appLink={appLink}title={this.state.projectName} btnName1="Go Back" btnName2="Home Page" canCancel canConfirm onCancel={this.modalCancelHandler} onConfirm={this.modalConfirmHandler}>
             <p>{this.state.projectInfo}</p>
-            <a href={this.state.projectModalLink} target="_blank" rel="noopener noreferrer">Go to App</a>
             </Modal>}
             {/* MODAL CODE ENDS */}
 
