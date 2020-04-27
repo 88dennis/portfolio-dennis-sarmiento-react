@@ -24,7 +24,7 @@ class HomePage extends Component {
                 </div>
 
                 <div id="circle1" className="three-circles">
-                <Link to="/Portfolio">
+                <Link to="/PortfolioPage">
                     <button id="btnid1" className="btn1">
                         <div className="me-circle">
                             <h1 className="front-names">Portfolio</h1>

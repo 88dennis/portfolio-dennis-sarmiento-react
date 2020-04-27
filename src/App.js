@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage"
 import ModalPage from "./pages/ModalPage"
 import TestPage from "./pages/TestPage"
 import AboutMePage from "./pages/AboutMePage"
+import PortfolioPage from "./pages/PortfolioPage"
 
 // import logo from './logo.svg'; //from original file
 import './App.css'; //from original file
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/HomePage" component={HomePage} />
           <Route exact path="/AboutMePage" component={AboutMePage} />
+          <Route exact path="/PortfolioPage" component={PortfolioPage} />
           <Route exact path="/ModalPage" component={ModalPage} />
           <Route exact path="/TestPage" component={TestPage} />
         </Switch>
