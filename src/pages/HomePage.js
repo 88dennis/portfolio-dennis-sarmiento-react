@@ -23,25 +23,27 @@ class HomePage extends Component {
                     </Link>
                 </div>
 
-                <div id="circle1" className="three-circles">
+                <div id="circle2" className="three-circles">
                 <Link to="/PortfolioPage">
-                    <button id="btnid1" className="btn1">
+                    <button id="btnid2" className="btn1">
                         <div className="me-circle">
                             <h1 className="front-names">Portfolio</h1>
                         </div>
                     </button>
                     </Link>
                 </div>
-                <div id="circle1" className="three-circles">
+
+                {/* <div id="circle3" className="three-circles">
 
                 <Link to="/Contact">
-                    <button id="btnid1" className="btn1">
+                    <button id="btnid3" className="btn1">
                         <div className="me-circle">
                             <h1 className="front-names">Contact</h1>
                         </div>
                     </button>
                     </Link>
-                </div>
+                </div> */}
+
             </div>
             </div>
 

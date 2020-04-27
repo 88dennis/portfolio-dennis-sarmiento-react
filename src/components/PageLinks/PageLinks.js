@@ -15,7 +15,7 @@ const pageLinksComp = props => (
         
         <Link to="/"><div className={window.location.pathname === ("/portfolio-dennis-sarmiento-react/" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/") ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
         Back to Main</div></Link>
-
+{/* 
         <Link to="/ModalPage"><div className={window.location.pathname === "/ModalPage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
       Modal Page </div></Link> 
 
@@ -23,7 +23,7 @@ const pageLinksComp = props => (
       Test Page </div></Link>
 
       <Link to="/gethelppage"><div className={window.location.pathname === "/gethelppage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
-      Get Help </div></Link>
+      Get Help </div></Link> */}
 
   </section>
 )
