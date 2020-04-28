@@ -11,7 +11,7 @@ const toolbarComp = props => (
                 {/* click is just a prop we need to pass it again */}
                 <DrawerToggle click={props.toggleDrawer}></DrawerToggle>
             </div>
-            <div className="toolbar_logo">{props.phoneIcon}<a href="/">{props.logo}</a></div>
+            <div className="toolbar_logo">{props.phoneIcon}{props.aboutMeIcon}{props.codeIcon}<a href="/"> {props.logo}</a></div>
             <div className="spacer"></div>
             <div className="toolbar_btns">{props.children}</div>
             <div className="toolbar_navigation_items">

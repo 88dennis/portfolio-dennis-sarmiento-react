@@ -13,6 +13,14 @@ import projectData from '../projectData';
 
 console.log(projectData);
 
+const iconStyle = ({
+    iconFont: {
+        fontSize: "30px",
+        color: "white",
+        paddingBottom: "5px"
+    }
+})
+
 class PortfolioPage extends Component {
     state = {
         modalShow: false,
@@ -102,6 +110,7 @@ class PortfolioPage extends Component {
             //for SIDE DRAWER AND ITS BACKDROP
             let appLink;
             let gitLink;
+            let codeIcon;
 
             if(this.state.modalShowAppInfo) {
                 appLink = <a href={this.state.projectModalLink} target="_blank" rel="noopener noreferrer"><button className="modalButtons">Open App</button></a>
@@ -113,13 +122,17 @@ class PortfolioPage extends Component {
             if(this.state.sideDrawerOpen){
                 sideDrawerBackdrop = <SideDrawerBackdrop drawerBackdropClickHandler={this.drawerBackdropClickHandler}/>
             }
+
+            if(window.location.pathname === ("/portfolio-dennis-sarmiento-react/PortfolioPage" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/PortfolioPage")){
+                codeIcon = <i className="code icon big" style={iconStyle.iconFont}></i>;
+            }
             //-----------------------------------
         return (
             <>
             <div style={{height: "100%", padding: "0"}}> 
-            <Toolbar logo="Portfolio" toggleDrawer={this.drawerToggleClickHandler}>
-           <Link to="/HomePage"><button className="modalButton">Home Page</button></Link> 
-            <button className="modalButton" onClick={this.modalShowHandler}>Contact Info</button>
+            <Toolbar codeIcon={codeIcon} logo="Portfolio" toggleDrawer={this.drawerToggleClickHandler}>
+           <Link to="/HomePage"><button title="Home"className="modalButton"><i className="home icon big"></i></button></Link> 
+            <button title="Contact Info"className="modalButton" onClick={this.modalShowHandler}><i className="address book icon" style={iconStyle.iconFont}></i></button>
             </Toolbar>
             <SideDrawer show={this.state.sideDrawerOpen}>
             <PageLinks backToSamePage = {this.drawerBackdropClickHandler}/>

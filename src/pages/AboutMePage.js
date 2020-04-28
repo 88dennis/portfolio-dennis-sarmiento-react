@@ -14,6 +14,13 @@ import ContactInfo from "../components/ContactInfo/ContactInfo";
 import resume from '../images/DennisSarmientoResumeWebDev3.pdf';
 import "./AboutMePage.css";
 
+const iconStyle = ({
+    iconFont: {
+        fontSize: "30px",
+        color: "white",
+        paddingBottom: "5px"
+    }
+})
 
 
 class AboutMePage extends Component {
@@ -75,16 +82,22 @@ class AboutMePage extends Component {
             //for SIDE DRAWER AND ITS BACKDROP
             
             let sideDrawerBackdrop;
+            let aboutMeIcon;
             if(this.state.sideDrawerOpen){
                 sideDrawerBackdrop = <SideDrawerBackdrop drawerBackdropClickHandler={this.drawerBackdropClickHandler}/>
             }
+            if(window.location.pathname === ("/portfolio-dennis-sarmiento-react/AboutMePage" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/AboutMePage")){
+                aboutMeIcon = <i className="user secret icon" style={iconStyle.iconFont}></i>;
+            }
+
+
             //-----------------------------------
         return (
             <>
             <div style={{height: "100%", padding: "0"}}> 
-            <Toolbar logo="About Me" toggleDrawer={this.drawerToggleClickHandler}>
-           <Link to="/HomePage"><button className="modalButton">Home Page</button></Link> 
-            <button className="modalButton" onClick={this.modalShowHandler}>Contact Info</button>
+            <Toolbar aboutMeIcon={aboutMeIcon} logo="About Me" toggleDrawer={this.drawerToggleClickHandler}>
+           <Link to="/HomePage"><button title = "Home" className="modalButton"><i className="home icon big"></i></button></Link> 
+            <button title = "Contact Info" className="modalButton" onClick={this.modalShowHandler}><i className="address book icon" style={iconStyle.iconFont}></i></button>
             </Toolbar>
             <SideDrawer show={this.state.sideDrawerOpen}>
             <PageLinks backToSamePage = {this.drawerBackdropClickHandler}/>

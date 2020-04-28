@@ -15,7 +15,7 @@ import "./AboutMePage.css";
 
 const iconStyle = ({
     iconFont: {
-        fontSize: "20px",
+        fontSize: "30px",
         color: "white",
         paddingBottom: "5px"
     }
@@ -89,13 +89,15 @@ class AboutMePage extends Component {
                 phoneIcon = <i className="address book icon big" style={iconStyle.iconFont}></i>;
             }
 
+
+//tasks, code, terminal, phone square, mobile alternate, pencil alternate, home
             //-----------------------------------
         return (
             <>
             <div style={{height: "100%", padding: "0"}}> 
             <Toolbar phoneIcon={phoneIcon}logo="Contact Info" toggleDrawer={this.drawerToggleClickHandler}>
-           <Link to="/HomePage"><button className="modalButton">Home Page</button></Link> 
-            <button className="modalButton" onClick={this.modalShowHandler}>Contact Info</button>
+           <Link to="/HomePage"><button className="modalButton"><i className="home icon big"></i></button></Link> 
+            <button className="modalButton" onClick={this.modalShowHandler}><i className="address book icon" style={iconStyle.iconFont}></i></button>
             </Toolbar>
             <SideDrawer show={this.state.sideDrawerOpen}>
             <PageLinks backToSamePage = {this.drawerBackdropClickHandler}/>
