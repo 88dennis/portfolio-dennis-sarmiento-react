@@ -4,11 +4,10 @@ import Backdrop from '../components/Backdrop/Backdrop';
 import Toolbar from "../components/Toolbar/Toolbar";
 import SideDrawer from "../components/SideDrawer/SideDrawer";
 import PageLinks from "../components/PageLinks/PageLinks";
-
+import ContactInfo from "../components/ContactInfo/ContactInfo";
 import SideDrawerBackdrop from "../components/SideDrawerBackdrop/SideDrawerBackdrop";
 import ProjectsComp from "../components/ProjectsComp/ProjectsComp";
 import { Link } from "react-router-dom";
-
 import "./PortfolioPage.css";
 import projectData from '../projectData';
 
@@ -46,6 +45,7 @@ class PortfolioPage extends Component {
         // newState.modallProjectInfoShow=!newState.modallProjectInfoShow
         console.log(id)
         console.log(project.name)
+        console.log(project.gitimage)
         // newState.showMe = !newState.showMe
         // newState.scale = this.state.scale > 1 ? 1 : 1.5
         this.setState(newState);
@@ -101,9 +101,12 @@ class PortfolioPage extends Component {
         render() {
             //for SIDE DRAWER AND ITS BACKDROP
             let appLink;
+            let gitLink;
 
             if(this.state.modalShowAppInfo) {
-                appLink = <a href={this.state.projectModalLink} target="_blank" rel="noopener noreferrer"><button className="modalButtons">Go to App</button></a>
+                appLink = <a href={this.state.projectModalLink} target="_blank" rel="noopener noreferrer"><button className="modalButtons">Open App</button></a>
+                gitLink=<a href={this.state.projectGitHubLink} target="_blank" rel="noopener noreferrer"><button className="buttonLinksbtn"><img className="iconsimg" src={this.state.projectGitimage} alt="github"></img></button></a>
+             
             }
             
             let sideDrawerBackdrop;
@@ -125,16 +128,15 @@ class PortfolioPage extends Component {
 
             {/* MODAL CODE STARTS */}
             {this.state.modalShow && <Backdrop canClose={this.modalCancelHandler}></Backdrop>}  
-            {this.state.modalShow && <Modal title="CONTACT INFO" btnName1="Go Back" btnName2="Home Page" canCancel canConfirm onCancel={this.modalCancelHandler} onConfirm={this.modalConfirmHandler}>
-            <p>Dennis Sarmiento</p>
-            <p>(425) 606-1354</p>
-            <p>dmsarmiento80@gmail.com</p>
+            {this.state.modalShow && <Modal  title="CONTACT INFO" btnName1="Back" btnName2="Home" canCancel canConfirm onCancel={this.modalCancelHandler} onConfirm={this.modalConfirmHandler}>
+        
+            <ContactInfo />
             </Modal>}
             {/* MODAL CODE ENDS */}
 
             {/* MODAL CODE STARTS */}
             {this.state.modalShowAppInfo && <Backdrop canClose={this.modalCancelHandler}></Backdrop>}  
-            {this.state.modalShowAppInfo && <Modal appLink={appLink}title={this.state.projectName} btnName1="Go Back" btnName2="Home Page" canCancel canConfirm onCancel={this.modalCancelHandler} onConfirm={this.modalConfirmHandler}>
+            {this.state.modalShowAppInfo && <Modal gitLink={gitLink} appLink={appLink}title={this.state.projectName} btnName1="Back" btnName2="Home" canCancel canConfirm onCancel={this.modalCancelHandler} onConfirm={this.modalConfirmHandler}>
             <p>{this.state.projectInfo}</p>
             </Modal>}
             {/* MODAL CODE ENDS */}

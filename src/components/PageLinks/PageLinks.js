@@ -13,8 +13,14 @@ const pageLinksComp = props => (
         <Link to="/PortfolioPage"><div className={window.location.pathname === ("/portfolio-dennis-sarmiento-react/PortfolioPage" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/PortfolioPage") ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
         Portfolio</div></Link>
         
+        <Link to="/ContactPage"><div className={window.location.pathname === ("/portfolio-dennis-sarmiento-react/ContactPage" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/ContactPage") ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
+        Contact Info</div></Link>
+
         <Link to="/"><div className={window.location.pathname === ("/portfolio-dennis-sarmiento-react/" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/") ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
         Back to Main</div></Link>
+
+        <a href="https://drive.google.com/file/d/1y4pQDAUdSzBq--MBGR-ZJYHa58bhFLIq/view?usp=sharing" target="_blank" rel="noopener noreferrer"><div className={window.location.pathname === ("/portfolio-dennis-sarmiento-react/" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/") ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
+        Resume Link</div></a>
 {/* 
         <Link to="/ModalPage"><div className={window.location.pathname === "/ModalPage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
       Modal Page </div></Link> 

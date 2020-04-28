@@ -1,10 +1,10 @@
 .modal {
-    width: 60%;
+    width: 75%;
     background: rgb(231, 218, 218);
     box-shadow: 0 2px 8px rgba(0,0,0,0.26);
     position: fixed;
     top: 20vh;
-    left: 20%;
+    left: 11%;
     z-index: 200;
 };
 
@@ -41,7 +41,7 @@
 .modal_content {
     padding: 1rem;
     overflow: auto;
-    height: 150px;
+    height: 130px;
 }
 .modal_actions {
     display: flex;

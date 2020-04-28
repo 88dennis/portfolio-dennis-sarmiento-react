@@ -6,14 +6,20 @@ import SideDrawer from "../components/SideDrawer/SideDrawer";
 import PageLinks from "../components/PageLinks/PageLinks";
 import ProfilePicture from "../components/ProfilePicture/ProfilePicture";
 import SideDrawerBackdrop from "../components/SideDrawerBackdrop/SideDrawerBackdrop";
-import ProfileContent from "../components/ProfileContent";
 import { Link } from "react-router-dom";
 import logo from '../images/profilepic.JPG';
-import ButtonLinks from "../components/ButtonLinks/ButtonLinks";
+// import ButtonLinks from "../components/ButtonLinks/ButtonLinks";
 import ContactInfo from "../components/ContactInfo/ContactInfo";
 import resume from '../images/DennisSarmientoResumeWebDev3.pdf';
 import "./AboutMePage.css";
 
+const iconStyle = ({
+    iconFont: {
+        fontSize: "20px",
+        color: "white",
+        paddingBottom: "5px"
+    }
+})
 
 
 class AboutMePage extends Component {
@@ -75,14 +81,19 @@ class AboutMePage extends Component {
             //for SIDE DRAWER AND ITS BACKDROP
             
             let sideDrawerBackdrop;
+            let phoneIcon;
             if(this.state.sideDrawerOpen){
                 sideDrawerBackdrop = <SideDrawerBackdrop drawerBackdropClickHandler={this.drawerBackdropClickHandler}/>
             }
+            if(window.location.pathname === ("/portfolio-dennis-sarmiento-react/ContactPage" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/ContactPage")){
+                phoneIcon = <i className="address book icon big" style={iconStyle.iconFont}></i>;
+            }
+
             //-----------------------------------
         return (
             <>
             <div style={{height: "100%", padding: "0"}}> 
-            <Toolbar logo="About Me" toggleDrawer={this.drawerToggleClickHandler}>
+            <Toolbar phoneIcon={phoneIcon}logo="Contact Info" toggleDrawer={this.drawerToggleClickHandler}>
            <Link to="/HomePage"><button className="modalButton">Home Page</button></Link> 
             <button className="modalButton" onClick={this.modalShowHandler}>Contact Info</button>
             </Toolbar>
@@ -102,35 +113,19 @@ class AboutMePage extends Component {
         {/* style={{marginTop: "100px"}} */}
             <main>
                 <div className="aboutMeCont1"style={{paddingTop: "75px"}} >
-                    <div className="box1">
+                    <div className="">
                     <ProfilePicture>
             <img className="profileimghome" src={logo} alt="Logo" />
           </ProfilePicture>
 
-          <ProfileContent profilegreet="Hello -- my name is Dennis Sarmiento.">
-            <p>Certified Web Developer working with software at the <a
-              href="https://drive.google.com/file/d/1QhZBQFCtF6s02nv2C6gX8yahuOIoBdQO/view">Full
-									Stack Bootcamp at the University of Washington in Seattle</a>. Check my applications
-								out on my <Link to="/PortfolioPage">Portfolio Page</Link>.</p>
-            
-            <p>I've also always been an engineer at heart. Attaining a Bachelor's degree in Mechanical
-              Engineering, I am no stranger to engineering projects. I thrive working on the
-              complexities of mechanical engineering projects through my own contracting company
-              (Frontview Manpower Services Co.) and the build-outs for my fastfood business (RFC Food
-								Services).</p>
-            
-
-            <p>My experience with running my companies lend itself well to effective teamwork and
-              strategic thinking.
-								Connect and learn more about me by clicking the icons below:</p>
-          </ProfileContent>
+          
           <br></br>
-
+          <ContactInfo />
 
           {/* RESUME PORTION  STARTS*/}
-          <ButtonLinks
+          {/* <ButtonLinks
             modalResumeClick={this.modalResumeClickHandler}
-          />
+          /> */}
 
           {this.state.modalResume && <Backdrop canClose={this.modalCancelHandler} />}
           {this.state.modalResume && <Modal title="My Resume" btnName1="Go Back" btnName2="Home Page" canCancel canConfirm onCancel={this.modalCancelHandler} onConfirm={this.modalConfirmHandler}>

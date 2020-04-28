@@ -33,16 +33,16 @@ class HomePage extends Component {
                     </Link>
                 </div>
 
-                {/* <div id="circle3" className="three-circles">
+                <div id="circle3" className="three-circles">
 
-                <Link to="/Contact">
+                <Link to="/ContactPage">
                     <button id="btnid3" className="btn1">
                         <div className="me-circle">
                             <h1 className="front-names">Contact</h1>
                         </div>
                     </button>
                     </Link>
-                </div> */}
+                </div>
 
             </div>
             </div>
