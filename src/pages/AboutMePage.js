@@ -121,12 +121,11 @@ class AboutMePage extends Component {
           </ProfilePicture>
 
           <ProfileContent profilegreet="Hello -- my name is Dennis Sarmiento.">
-            <p>Certified Web Developer working with software at the <a
-              href="https://drive.google.com/file/d/1QhZBQFCtF6s02nv2C6gX8yahuOIoBdQO/view">Full
-									Stack Bootcamp at the University of Washington in Seattle</a>. Check my applications
-								out on my <Link to="/PortfolioPage">Portfolio Page</Link>.</p>
             
-            <p>I've also always been an engineer at heart. Attaining a Bachelor's degree in Mechanical
+           <p>Working as a Freelance Full Stack React Web Developer, certified at the <a
+              href="https://drive.google.com/file/d/1QhZBQFCtF6s02nv2C6gX8yahuOIoBdQO/view">University of Washington in Seattle</a>.</p>
+            
+            <p>I've always been an engineer at heart. Attaining a Bachelor's degree in Mechanical
               Engineering, I am no stranger to engineering projects. I thrive working on the
               complexities of mechanical engineering projects through my own contracting company
               (Frontview Manpower Services Co.) and the build-outs for my fastfood business (RFC Food
@@ -134,8 +133,9 @@ class AboutMePage extends Component {
             
 
             <p>My experience with running my companies lend itself well to effective teamwork and
-              strategic thinking.
-								Connect and learn more about me by clicking the icons below:</p>
+              strategic thinking. You may check my applications
+              out on my <Link to="/PortfolioPage">Portfolio Page</Link> or
+								connect and learn more about me by clicking the icons below:</p>
           </ProfileContent>
           <br></br>
 
