@@ -10,17 +10,18 @@
     -webkit-transform: scale(1.1);
     /* Safari 3-8 */
     transform: scale(1.1);
-    
+
 }
+
 /* .appBoxMain {
     justify-content: center;
     display: flex;
 } */
 .appBox {
     display: flex;
-align-items: center;
+    align-items: center;
     padding: 0 20px;
-    
+
 }
 
 .boxCont {
@@ -36,6 +37,7 @@ align-items: center;
 
     margin-bottom: 0;
 }
+
 .appInfoButton {
     height: 30px;
     border-radius: 10%;
@@ -48,7 +50,7 @@ align-items: center;
 }
 
 .appInfoButton:hover,
-.appInfoButton:focus{
+.appInfoButton:focus {
     color: black;
     background-color: white;
 }
@@ -59,15 +61,15 @@ align-items: center;
     width: 95%;
     align-items: center;
     background: rgb(228, 212, 189);
-/* display: flex;
+    /* display: flex;
 justify-content: center; */
 }
 
 .boxMainWrap1 {
     margin: 0 auto;
     background: rgb(228, 212, 189);
-    
-/* display: flex;
+
+    /* display: flex;
 justify-content: center; */
 }
 
@@ -83,7 +85,7 @@ justify-content: center; */
     border-bottom-color: rgb(167, 161, 161);
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    
+
 }
 
 .box4 {
