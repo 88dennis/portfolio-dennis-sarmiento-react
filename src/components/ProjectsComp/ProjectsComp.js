@@ -13,10 +13,10 @@ const projectsComp = (props) => {
 {/* the key prop here is required by react */}
 {/* if you want to do a method inside this html or pass a prop, you enclose it with a curly bracket */}
 {/* pass the KEY prop to the OUTERMOST ELEMENT */}
-{props.projects.map((project, key) => (
-   
-
-<div key={key} className="boxWrapper1">
+{/* the key in the parameter is the INDEX */}
+{/* its MUCH BETTER TO USE THE project._id as your key vs the index */}
+{props.projects.map((project, index) => (
+<div key={index} className="boxWrapper1">
 <div>
 <div className="box4">
 <div className="appBoxMain">
@@ -28,8 +28,9 @@ const projectsComp = (props) => {
                 {/* <div className="spacer"></div> */}
                 <div className="boxCont">
                     <h3>{project.name}</h3>
-                    <button className="appInfoButton" onClick={
-                () => props.projectBtnHandler(project._id)
+                    {/* THE projectBtnHandler comes from the portfolio page */}
+                    {/* PASSES THE PARAMETER project._id TO THE PARENT COMPONENT PORTFOLIO PAGE THIS ID WILL BE USED TO CHANGE THE STATES NEEDED AND TO SHOW IT INTO THE MODAL */}
+                    <button className="appInfoButton" onClick={() => props.projectBtnHandler(project._id)
                 }>App Info</button>
                 </div>
                 </div>
