@@ -21,12 +21,12 @@
 
 .profileContentHeader h1 {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.0rem;
 }
 
 .profileContent {
     padding: 1.5rem;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
 }
 
 .profileButtons {

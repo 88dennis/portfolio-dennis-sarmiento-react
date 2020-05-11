@@ -2,8 +2,20 @@ import React from 'react';
 import './PageLinks.css';
 import { Link } from "react-router-dom";
 
-const pageLinksComp = props => (
+const pageLinksComp = props => {
+  
+  
+  let xBtnCLass = 'xBtn';
+  if(props.show) {
+    xBtnCLass = 'xBtn show';
+  }
+
+  return (
+
   <section>
+
+<div className={"listDiv notnow " + xBtnCLass} onClick={props.backToSamePage}>X</div>
+
     <Link to="/HomePage"><div className={window.location.pathname === ("/portfolio-dennis-sarmiento-react/HomePage" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/HomePage") ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
     <i className="home icon"></i> Home</div></Link>
         
@@ -19,7 +31,7 @@ const pageLinksComp = props => (
         <Link to="/"><div className={window.location.pathname === ("/portfolio-dennis-sarmiento-react/" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/") ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
         <i className="terminal icon"></i> Back to Main</div></Link>
 
-        <a href="https://drive.google.com/file/d/1y4pQDAUdSzBq--MBGR-ZJYHa58bhFLIq/view?usp=sharing" target="_blank" rel="noopener noreferrer"><div className={window.location.pathname === ("/portfolio-dennis-sarmiento-react/" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/") ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
+        <a href="https://drive.google.com/file/d/192ChBlAcK58u9cPbtWSpFZwXZjWMMHiP/view?usp=sharing" target="_blank" rel="noopener noreferrer"><div className={window.location.pathname === ("/portfolio-dennis-sarmiento-react/" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/") ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
         <i className="pencil alternate icon"></i> Resume Link</div></a>
 {/* 
         <Link to="/ModalPage"><div className={window.location.pathname === "/ModalPage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
@@ -32,6 +44,6 @@ const pageLinksComp = props => (
       Get Help </div></Link> */}
 
   </section>
-)
+)}
 
 export default pageLinksComp

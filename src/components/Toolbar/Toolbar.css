@@ -2,7 +2,7 @@
     width: 100%;
     position: fixed;
     background: rgba(0,0,0,0.75);
-    height: 75px;
+    height: 65px;
     z-index: 99;
 }
 
@@ -18,7 +18,7 @@ height: 100%;
 .toolbar_logo a{
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 /* this will take all the space in between */
@@ -28,7 +28,7 @@ height: 100%;
 
 .toolbar_navigation_items a {
     color: white;
-    text-decoration: noneß
+    text-decoration: none;
 }
 
 .toolbar_navigation_items ul {

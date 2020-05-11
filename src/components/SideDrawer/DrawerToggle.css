@@ -1,7 +1,7 @@
 .toggle_button {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* the flex-direction column makes the div pile up on top of each other */
     /* the space between makes some spaces between divs */
     height: 24px;
@@ -21,6 +21,9 @@
 
 .toggle_button_line {
 width: 30px;
-height: 2px;
+height: 1px;
 background: white;
+/* added */
+margin-top: 5px;
+margin-bottom: 5px;
 }

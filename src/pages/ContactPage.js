@@ -100,7 +100,7 @@ class AboutMePage extends Component {
                         <button className="modalButton" onClick={this.modalShowHandler}><i className="address book icon" style={iconStyle.iconFont}></i></button>
                     </Toolbar>
                     <SideDrawer show={this.state.sideDrawerOpen}>
-                        <PageLinks backToSamePage={this.drawerBackdropClickHandler} />
+                        <PageLinks show={this.state.sideDrawerOpen} backToSamePage={this.drawerBackdropClickHandler} />
                     </SideDrawer>
                     {sideDrawerBackdrop}
 

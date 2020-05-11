@@ -16,7 +16,7 @@ import "./AboutMePage.css";
 
 const iconStyle = ({
     iconFont: {
-        fontSize: "30px",
+        fontSize: "25px",
         color: "white",
         paddingBottom: "5px"
     }
@@ -100,7 +100,7 @@ class AboutMePage extends Component {
                         <button title="Contact Info" className="modalButton" onClick={this.modalShowHandler}><i className="address book icon" style={iconStyle.iconFont}></i></button>
                     </Toolbar>
                     <SideDrawer show={this.state.sideDrawerOpen}>
-                        <PageLinks backToSamePage={this.drawerBackdropClickHandler} />
+                        <PageLinks show={this.state.sideDrawerOpen} backToSamePage={this.drawerBackdropClickHandler} />
                     </SideDrawer>
                     {sideDrawerBackdrop}
 
@@ -114,7 +114,7 @@ class AboutMePage extends Component {
                     {/* HOW TO CREATE A JAVASCRIPT OBJECT USING DOUBLE CURLY BRACES*/}
                     {/* style={{marginTop: "100px"}} */}
                     <main>
-                        <div className="aboutMeCont1" style={{ paddingTop: "75px" }} >
+                        <div className="aboutMeCont1" style={{ paddingTop: "65px" }} >
                             <div className="box1">
                                 <ProfilePicture>
                                     <img className="profileimghome" src={logo} alt="Logo" />

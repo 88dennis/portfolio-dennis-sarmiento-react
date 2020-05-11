@@ -3,6 +3,7 @@ import './SideDrawer.css';
 
 const sideDrawer = props => {
     let drawerClasses = 'sidedrawer';
+    
     if(props.show) {
         drawerClasses = 'sidedrawer open';
     }
