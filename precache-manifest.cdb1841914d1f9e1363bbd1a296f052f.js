@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8323d6d19b56d6be898a9dc80df38021",
+    "revision": "a2450da42fc6f7cbd3f7536e4c282f7b",
     "url": "/portfolio-dennis-sarmiento-react/index.html"
   },
   {
-    "revision": "50b0414ebcf2bbfa76de",
+    "revision": "fa0c9dc4b28347e0b6be",
     "url": "/portfolio-dennis-sarmiento-react/static/css/main.8373a7cd.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-dennis-sarmiento-react/static/js/2.6324154d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "50b0414ebcf2bbfa76de",
-    "url": "/portfolio-dennis-sarmiento-react/static/js/main.f6fc4fcf.chunk.js"
+    "revision": "fa0c9dc4b28347e0b6be",
+    "url": "/portfolio-dennis-sarmiento-react/static/js/main.9b655135.chunk.js"
   },
   {
     "revision": "4a1fac78036368106803",
