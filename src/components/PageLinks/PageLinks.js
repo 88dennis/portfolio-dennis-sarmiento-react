@@ -31,7 +31,7 @@ const pageLinksComp = props => {
         <Link to="/"><div className={window.location.pathname === ("/portfolio-dennis-sarmiento-react/" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/") ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
         <i className="terminal icon"></i> Back to Main</div></Link>
 
-        <a href="https://drive.google.com/file/d/192ChBlAcK58u9cPbtWSpFZwXZjWMMHiP/view?usp=sharing" target="_blank" rel="noopener noreferrer"><div className={window.location.pathname === ("/portfolio-dennis-sarmiento-react/" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/") ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
+        <a href="https://drive.google.com/file/d/1nwcoWqmfs4Tmwh_Qu04DrU6GXvRNr8T4/view?usp=sharing" target="_blank" rel="noopener noreferrer"><div className={window.location.pathname === ("/portfolio-dennis-sarmiento-react/" || "https://88dennis.github.io/portfolio-dennis-sarmiento-react/") ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>
         <i className="pencil alternate icon"></i> Resume Link</div></a>
 {/* 
         <Link to="/ModalPage"><div className={window.location.pathname === "/ModalPage" ? "listDiv now" : "listDiv notnow"} onClick={props.backToSamePage}>

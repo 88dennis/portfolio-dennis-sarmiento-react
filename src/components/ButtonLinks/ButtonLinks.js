@@ -26,7 +26,7 @@ const buttonLinks = props => (
 {/* <button className="resumebtn" onClick={props.modalResumeClick}>
 Resume</button> */}
 
-<a href="https://drive.google.com/file/d/192ChBlAcK58u9cPbtWSpFZwXZjWMMHiP/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button className="resumebtn">Resume</button></a>
+<a href="https://drive.google.com/file/d/1nwcoWqmfs4Tmwh_Qu04DrU6GXvRNr8T4/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button className="resumebtn">Resume</button></a>
 
 
 </section>
