@@ -1,5 +1,4 @@
 .landingPageContainer {
-    background-color: black;
     color: white;
     height: 100vh;
 }
@@ -9,7 +8,7 @@
     /* height: 100vh; */
     /* background: -webkit-gradient(linear, left top, left bottom, from(rgb(88, 89, 184)), to(rgb(109, 126, 148))) fixed; */
     /* background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(77, 19, 209, 1))) fixed; */
-    }
+}
 
 .logocont2 {
     display: flex;
@@ -21,14 +20,14 @@
     height: 190px;
     position: absolute;
     display: inline-block;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
     /* border-radius: 50%; */
     background: transparent;
     z-index: 1;
-  }
+}
 
 .logoimghome3 {
     width: 190px;
@@ -60,7 +59,6 @@
     border-color: rgba(22, 20, 54, 0.5); */
     overflow: hidden;
     box-shadow: 1px 0px 7px rgb(12, 12, 12, 0.5);
-
 }
 
 .logocirclewrap3 {
@@ -79,78 +77,115 @@
     border-color: rgba(22, 20, 54, 0.5); */
     overflow: hidden;
     box-shadow: 1px 0px 7px rgb(12, 12, 12, 0.5);
-
 }
 
 .descwrap1 {
     justify-content: center;
     display: flex;
-  }
-  
-  .descwrap2 {
-  width: 400px;
-  color: white;
-  font-size: 18px;
-  }
+}
 
-  .landpagediv {
+.descwrap2 {
+    width: 400px;
+    color: white;
+    font-size: 18px;
+}
+
+.landpagediv {
     padding: 1rem;
     color: white;
-  }
-  
-  .landnow a {
+}
+
+.landnow a {
     text-decoration: none;
     font-size: 1.2rem;
     background-color: blue;
     color: white;
-  }
-  
-  .landnotnow a {
+}
+
+.landnotnow a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
     padding: 1.2rem;
-  }
+}
 
-  .loginsignupbtnhomewrap {
+.loginsignupbtnhomewrap {
     justify-content: center;
     display: flex;
-  }
-  
-  .loginsignupbtnhome {
-  border-style: solid;
-  border-width: 1px;
-  background-color: transparent;
-  font-size: 22px;
-  font-family: 'Lato', sans-serif;
-  color: white;
-  border-radius: 50px;
-  width:180px;
-  padding: 0;
-  outline: none;
-  
-  }
-  
-  .loginsignupbtnhome:hover,
-  .loginsignupbtnhome:focus {
-    color: white;
+    margin-bottom: 30px;
+}
+
+.loginsignupbtnhome {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(127, 127, 206);
+    background-color: transparent;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(75, 75, 173);
+    border-radius: 50px;
+    width: 180px;
+    padding: 0;
+    outline: none;
+    padding: 1rem;
+}
+
+.loginsignupbtnhome:hover,
+.loginsignupbtnhome:focus {
+    color: white !important;
     background-color: rgb(127, 127, 206);
-    border-style: none;
-  
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(127, 127, 206);
     /* -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);  */
-  } 
+}
 
-  .linkLand {
-      text-decoration: none;
-      outline: none;
-  }
+.linkLand {
+    text-decoration: none;
+    outline: none;
+}
 
-  /* .linkLand:focus {
+
+/* .linkLand:focus {
     color: white;
     background-color: rgb(127, 127, 206);
     border-style: none;
   } */
 
+
 /* -------------------------------------- */
+
+.eyes {
+    margin-top: 120px;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.eye {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(127, 127, 206, 0.2);
+}
+
+.eyeball {
+    width: 40px;
+    height: 40px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 5px solid rgba(108, 122, 137, 1);
+}

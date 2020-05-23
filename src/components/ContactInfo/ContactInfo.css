@@ -3,10 +3,11 @@
 }
 
 .contactWrapper {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .contactWrapper2 {
-width: 280px;
+    width: 280px;
+    font-size: 14px;
 }
