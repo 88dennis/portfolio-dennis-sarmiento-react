@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/portfolio-dennis-sarmiento-react/precache-manifest.cdb1841914d1f9e1363bbd1a296f052f.js"
+  "/portfolio-dennis-sarmiento-react/precache-manifest.49abf69c11c0c4dd8f8955f02729ce65.js"
 );
 
 self.addEventListener('message', (event) => {

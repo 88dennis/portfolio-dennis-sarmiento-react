@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-dennis-sarmiento-react/static/css/main.8373a7cd.chunk.css",
-    "main.js": "/portfolio-dennis-sarmiento-react/static/js/main.9b655135.chunk.js",
-    "main.js.map": "/portfolio-dennis-sarmiento-react/static/js/main.9b655135.chunk.js.map",
+    "main.css": "/portfolio-dennis-sarmiento-react/static/css/main.bb79225a.chunk.css",
+    "main.js": "/portfolio-dennis-sarmiento-react/static/js/main.38801039.chunk.js",
+    "main.js.map": "/portfolio-dennis-sarmiento-react/static/js/main.38801039.chunk.js.map",
     "runtime-main.js": "/portfolio-dennis-sarmiento-react/static/js/runtime-main.cb7e8d7f.js",
     "runtime-main.js.map": "/portfolio-dennis-sarmiento-react/static/js/runtime-main.cb7e8d7f.js.map",
-    "static/js/2.6324154d.chunk.js": "/portfolio-dennis-sarmiento-react/static/js/2.6324154d.chunk.js",
-    "static/js/2.6324154d.chunk.js.map": "/portfolio-dennis-sarmiento-react/static/js/2.6324154d.chunk.js.map",
+    "static/js/2.5a6dbe0b.chunk.js": "/portfolio-dennis-sarmiento-react/static/js/2.5a6dbe0b.chunk.js",
+    "static/js/2.5a6dbe0b.chunk.js.map": "/portfolio-dennis-sarmiento-react/static/js/2.5a6dbe0b.chunk.js.map",
     "index.html": "/portfolio-dennis-sarmiento-react/index.html",
-    "precache-manifest.cdb1841914d1f9e1363bbd1a296f052f.js": "/portfolio-dennis-sarmiento-react/precache-manifest.cdb1841914d1f9e1363bbd1a296f052f.js",
+    "precache-manifest.49abf69c11c0c4dd8f8955f02729ce65.js": "/portfolio-dennis-sarmiento-react/precache-manifest.49abf69c11c0c4dd8f8955f02729ce65.js",
     "service-worker.js": "/portfolio-dennis-sarmiento-react/service-worker.js",
-    "static/css/main.8373a7cd.chunk.css.map": "/portfolio-dennis-sarmiento-react/static/css/main.8373a7cd.chunk.css.map",
-    "static/js/2.6324154d.chunk.js.LICENSE.txt": "/portfolio-dennis-sarmiento-react/static/js/2.6324154d.chunk.js.LICENSE.txt",
+    "static/css/main.bb79225a.chunk.css.map": "/portfolio-dennis-sarmiento-react/static/css/main.bb79225a.chunk.css.map",
+    "static/js/2.5a6dbe0b.chunk.js.LICENSE.txt": "/portfolio-dennis-sarmiento-react/static/js/2.5a6dbe0b.chunk.js.LICENSE.txt",
     "static/media/DS3.png": "/portfolio-dennis-sarmiento-react/static/media/DS3.6f69d94a.png",
     "static/media/DS3NOBGBG.png": "/portfolio-dennis-sarmiento-react/static/media/DS3NOBGBG.aee0f87f.png",
     "static/media/DennisSarmientoResumeWebDev3.pdf": "/portfolio-dennis-sarmiento-react/static/media/DennisSarmientoResumeWebDev3.11dbaacf.pdf",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.cb7e8d7f.js",
-    "static/js/2.6324154d.chunk.js",
-    "static/css/main.8373a7cd.chunk.css",
-    "static/js/main.9b655135.chunk.js"
+    "static/js/2.5a6dbe0b.chunk.js",
+    "static/css/main.bb79225a.chunk.css",
+    "static/js/main.38801039.chunk.js"
   ]
 }
