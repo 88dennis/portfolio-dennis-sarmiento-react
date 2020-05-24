@@ -32,7 +32,6 @@ class LandingPage extends Component {
     eyeBalls: [],
     x: 0,
     y: 0,
-
     isMouseMove: true
   }
 
@@ -52,8 +51,8 @@ class LandingPage extends Component {
       redirectTo: "/HomePage",
     })
   }
-  logMousePosition = e => {
 
+  logMousePosition = e => {
     if (this.state.isMouseMove) {
       const newState = { ...this.state }
       newState.eyeBalls = this.state.eyeBalls
@@ -66,8 +65,6 @@ class LandingPage extends Component {
         newState.eyeBalls[i].style.transform = "translate(-" + newState.x + ",-" + newState.y + ")";
       }
       // console.log(e)
-
-
       this.setState(newState);
       // this.setState({
       //     x: e.clientX,
@@ -85,8 +82,8 @@ class LandingPage extends Component {
     }
   }
 
-
   componentWillUnmount() {
+    window.removeEventListener('mousemove', this.logMousePosition)
     this.setState({
       isMouseMove: false,
     })
